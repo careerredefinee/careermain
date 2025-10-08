@@ -34,6 +34,7 @@ import GroupChatPage from './pages/GroupChatPage';
 import GroupsListPage from './pages/GroupsListPage';
 import PremiumToolsPage from './pages/PremiumToolsPage';
 import AssessmentsPage from './pages/admin/AssessmentsPage';
+import OptionalPage from './pages/admin/OptionalPage';
 
 // Admin Layout component
 const AdminLayout: React.FC = () => {
@@ -121,6 +122,7 @@ function App() {
                   <Route path="/admin/jobs" element={<AdminJobsPage />} />
                   <Route path="/admin/materials" element={<MaterialsPage />} />
                   <Route path="/admin/assessments" element={<AssessmentsPage />} />
+                  <Route path="/admin/optional" element={<OptionalPage />} />
                   <Route path="/admin/groups" element={<AdminGroupsPage />} />
                   <Route path="/admin/premium-users" element={<PremiumUsersPage />} />
                   <Route path="/admin/meetings" element={<AdminMeetingsPage />} />

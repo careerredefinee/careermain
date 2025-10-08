@@ -35,6 +35,7 @@ const navigation = [
   { name: 'Brands', href: '/admin#brands', icon: TrophyIcon, current: false },
   { name: 'Materials', href: '/admin/materials', icon: DocumentTextIcon, current: false },
   { name: 'Assessments', href: '/admin/assessments', icon: DocumentTextIcon, current: false },
+  { name: 'Optional', href: '/admin/optional', icon: DocumentTextIcon, current: false },
   { name: 'Premium Users', href: '/admin/premium-users', icon: StarIcon, current: false },
   { name: 'Premium Meetings', href: '/admin/pmeetings', icon: CalendarDaysIcon, current: false },
   { name: 'Groups', href: '/admin/groups', icon: UsersIcon, current: false },
