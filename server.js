@@ -4,9 +4,11 @@ import dotenv from 'dotenv';
 if (process.env.NODE_ENV !== 'production') {
   dotenv.config({ path: './.env' });
 }
+
 // Also merge variables from config.env in all environments so production/test get keys
 // Do not override already-set platform env vars
 dotenv.config({ path: './config.env', override: false });
+
 
 import express from 'express';
 import cors from 'cors';
@@ -229,8 +231,11 @@ const allowedOrigins = [
   /^https?:\/\/([a-z0-9-]+\.)*career-redefine\.com$/, 
   // New primary domain (Hostinger): allow both www and non-www
   /^https?:\/\/([a-z0-9-]+\.)*careerredefine\.com$/,
+
   // Testing subdomain(s)
   /^https?:\/\/([a-z0-9-]+\.)*testing\.careerredefine\.com$/,
+
+
   // Test subdomain (and nested) - allow both http/https (for local proxy testing) and www
   /^https?:\/\/([a-z0-9-]+\.)*test\.careerredefine\.com$/,
   /^https?:\/\/([a-z0-9-]+\.)*career-redefine\.vercel\.app$/,
@@ -239,8 +244,11 @@ const allowedOrigins = [
   // Specific production URLs
   'https://test.careerredefine.com',
   'https://www.test.careerredefine.com',
+
   'https://testing.careerredefine.com',
   'https://www.testing.careerredefine.com',
+
+
   'https://test.career-redefine.vercel.app',
   'https://test.career-redefine.com'
 ];
